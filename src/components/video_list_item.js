@@ -1,10 +1,8 @@
 import React from 'react';
 
 export default ({video, onVideoSelect}) => {
-    console.log('Video List Item:', onVideoSelect)
     const { url } = video.snippet.thumbnails.default;
     const { title } = video.snippet;
-
     return (
         <li onClick={() => onVideoSelect(video)} className="list-group-item">
             <div className="video-list media">
